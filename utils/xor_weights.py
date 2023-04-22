@@ -1,4 +1,6 @@
 # Havn't tested this, but it should work for xoring weights to be compatible with distribution licenses.
+# But there is a chance this is just wrong, will need to test it.
+# OpenAssistant do something similar.
 import os
 import click
 import gzip
