@@ -4,6 +4,11 @@
 2. Make something.
 3. Write README.md.
 
+# Running the labeling app
+
+```
+uvicorn app:app --reload
+```
 
 Contributors
 ------------

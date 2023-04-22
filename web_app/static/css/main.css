@@ -1,0 +1,132 @@
+/* Custom colors and global styles */
+:root {
+    --primary: #4a4a4a;
+    --secondary: #00d1b2;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar.is-primary {
+    background-color: var(--primary);
+}
+
+.navbar-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-item span[role="img"] {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Content section */
+.section {
+    padding: 2rem;
+}
+
+/* Sidebar */
+.menu-label {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.menu-list a {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list a span[role="img"] {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.menu-list a:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Task card styles */
+.columns {
+    margin-top: 2rem;
+}
+
+.column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    background-color: #f5f5f5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-content .media {
+    margin-bottom: 1rem;
+}
+
+.media-left span[role="img"] {
+    font-size: 2rem;
+}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+
+
+/* Collapsible sidebar for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.is-active {
+        display: block;
+    }
+
+    .navbar-brand {
+        flex-grow: 1;
+    }
+
+    .navbar-brand::after {
+        content: "☰";
+        font-size: 2rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+}
+
+.section {
+    padding: 2rem;
+    background-color: #f9f9f9; 
+    border-radius: 0.5rem; 
+    margin-left: 1rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Sidebar */
+.menu-label {
+    color: var(--primary);
+    font-weight: bold;
+}

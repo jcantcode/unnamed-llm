@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <nav class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <span role="img" aria-label="Dashboard Emoji">📊</span>
+                Dashboard
+            </a>
+        </div>
+    </nav>
+
+    <div class="columns">
+        <!-- Sidebar -->
+        <div class="column is-one-fifth">
+            <aside class="menu">
+                <p class="menu-label">
+                    Navigation
+                </p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="/section-1">
+                            <span role="img" aria-label="Section 1 Emoji">🌟</span>
+                            Dataset 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/section-2">
+                            <span role="img" aria-label="Section 2 Emoji">💼</span>
+                            Inference
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/section-3">
+                            <span role="img" aria-label="Section 3 Emoji">🎯</span>
+                            Status
+                        </a>
+                    </li>
+                    <!-- Add more sidebar links here -->
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Main content -->
+        <div class="column">
+            <section class="section">
+                {% block content %}
+                {% endblock %}
+            </section>
+        </div>
+    </div>
+</body>
+</html>

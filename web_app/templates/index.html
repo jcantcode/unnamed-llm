@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">
+        <span role="img" aria-label="Dashboard Emoji">📊</span>
+        Dashboard
+    </h1>
+
+    <div class="columns is-multiline">
+        <div class="column is-one-third">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <span role="img" aria-label="Instruction Emoji">📋</span>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Instruction Dataset</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Help verify and clean the instruction data. 
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="/task-1" class="card-footer-item">Begin</a>
+                </footer>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <span role="img" aria-label="Paint Emoji">🎨</span>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">3d Model Dataset</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Given a 3d model, describe, instruct and question. 
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="/task-2" class="card-footer-item">Begin</a>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Add more task cards here -->
+
+    </div>
+{% endblock %}
